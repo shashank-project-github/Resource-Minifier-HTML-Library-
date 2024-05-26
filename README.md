@@ -1,5 +1,5 @@
 
-# Project Resource Minifier
+# Project Resource Minifier 
 
 ## Overview
 
