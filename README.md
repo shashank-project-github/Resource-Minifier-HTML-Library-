@@ -75,3 +75,13 @@ Video compression reduces the file size of videos without significantly affectin
 - Enhanced User Experience: Reduced buffering for smoother playback.
 #### Usage
 #### Include the <video-minified> Element:
+```bash
+<video-minified src="video.mp4" style="height: 200px; width: 400px;"></video-minified>
+
+```
+#### Set the Attributes:
+```bash
+<video-minified data-video-source="path/to/your/video.mp4" data-output-format="webm" data-quality="80"></video-minified>
+
+
+```
