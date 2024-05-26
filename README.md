@@ -26,7 +26,7 @@ HTMLMinifier compresses and optimizes CSS and JS files by removing extra charact
 - Better Performance: Increased efficiency across web pages for improved user experience.
 #### Usage
 To use the file-minify tag for minifying CSS and JavaScript files, follow these steps:
-#### Include the <file-minify> Tag:
+#### Include the < file-minify > Tag:
 
 
 
@@ -46,7 +46,7 @@ To use the file-minify tag for minifying CSS and JavaScript files, follow these 
 
 
 ```
- Save and Refresh: The <file-minify> tag will automatically minify the specified files during page load.
+ Save and Refresh: The < file-minify > tag will automatically minify the specified files during page load.
 
 ### Image Compression
 Image compression reduces the file size of images without significantly affecting their visual quality.
@@ -56,7 +56,7 @@ Image compression reduces the file size of images without significantly affectin
 - Reduced Bandwidth: Smaller files consume fewer network resources.
 - Better Performance: Increased efficiency across web pages for improved user experience.
 #### Usage
-#### Include the <img-minified> Element:
+#### Include the < img-minified > Element:
 ```bash
 <img-minified src="img.jpg" alt="alt_name" style="height: 200px; width: 400px;"></img-minified>
 
@@ -74,7 +74,7 @@ Video compression reduces the file size of videos without significantly affectin
 - Improved SEO: Faster loading pages rank higher in search results.
 - Enhanced User Experience: Reduced buffering for smoother playback.
 #### Usage
-#### Include the <video-minified> Element:
+#### Include the < video-minified > Element:
 ```bash
 <video-minified src="video.mp4" style="height: 200px; width: 400px;"></video-minified>
 
@@ -85,3 +85,35 @@ Video compression reduces the file size of videos without significantly affectin
 
 
 ```
+
+### Image Lazy Loading
+Image lazy loading delays the loading of images outside the viewport until they are about to become visible to the user.
+
+
+
+#### Benefits
+
+- Faster Page Load Times: Only essential content loads initially.
+- Improved User Experience: Users can interact with the page faster.
+- Reduced Bandwidth Usage: Only images that enter the viewport are downloaded.
+#### Usage
+#### Include the < img-lazy > Element:
+
+```bash
+<img-lazy src="image-path.jpg" alt="img" style="height: 200px; width: 400px;"></img-lazy>
+
+```
+### Video Lazy Loading
+Video lazy loading delays the loading of videos outside the viewport until they are about to become visible to the user.
+#### Benefits
+- Faster Page Load Times: Only essential content loads initially.
+- Improved User Experience: Users can interact with the page faster.
+- Reduced Bandwidth Usage: Only videos that enter the viewport are downloaded.
+#### Usage
+#### Include the < video-lazy > Element:
+```bash
+<video-lazy src="video-path.mp4" alt="vid" style="height: 200px; width: 400px;"></video-lazy>
+
+```
+### Conclusion
+By using Resource Minifier, you can significantly enhance the performance of your website. This library provides a simple and efficient way to compress CSS, JavaScript, images, and videos, as well as implement lazy loading for improved load times and user experience.
