@@ -1,0 +1,43 @@
+{
+"name": "@__shashank__/html-library-react" ,
+  "version": "1.0.2",
+  "description": "Reusable React component library",
+  "type": "module",
+  "main": "./dist/html-library.js",
+  "module": "./dist/html-library.js",
+  "exports": {
+    ".": {
+      "import": "./dist/html-library.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "library",
+    "html"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}

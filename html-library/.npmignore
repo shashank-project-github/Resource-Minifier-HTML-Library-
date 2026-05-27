@@ -1,0 +1,6 @@
+src/
+node_modules/
+*.jpg
+*.png
+*.webp
+index.html
