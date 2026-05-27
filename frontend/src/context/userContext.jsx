@@ -7,14 +7,20 @@ const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
 
-    const [currentUser, setcurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
+    const [currentUser, setcurrentUser] = useState(
+        typeof window !== "undefined"
+            ? JSON.parse(sessionStorage.getItem('user'))
+            : null
+    );
 
     const [loggedIn, setLoggedIn] = useState(currentUser !== null);
 
     const router = useRouter();
 
     const logout = () => {
-        sessionStorage.removeItem('user');
+        if (typeof window !== "undefined") {
+            sessionStorage.removeItem('user');
+        }
         setLoggedIn(false);
         router.push("/")
     }

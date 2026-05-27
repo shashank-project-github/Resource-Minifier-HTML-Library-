@@ -44,7 +44,9 @@ const Login = () => {
           enqueueSnackbar('Login Successful', { variant: 'success' });
           res.json().then(data => {
             console.log(data);
-            sessionStorage.setItem('user', JSON.stringify(data));
+            if (typeof window !== "undefined") {
+              sessionStorage.setItem('user', JSON.stringify(data));
+}
             setLoggedIn(true);
             router.push('/');
           })
