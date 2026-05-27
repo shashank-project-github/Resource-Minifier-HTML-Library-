@@ -52,7 +52,7 @@ router.post('/minify-js', async (req, res) => {
 
 router.post('/minify-video', uploader.single('video'), (req, res) => {
     compressVideo(() => {
-        res.status(200).json({ message: 'Video compressed', videoUrl: 'http://localhost:5000/output.mp4'});
+        res.status(200).json({ message: 'Video compressed', videoUrl: 'http://localhost:5000/output.mp4' });
     });
 })
 

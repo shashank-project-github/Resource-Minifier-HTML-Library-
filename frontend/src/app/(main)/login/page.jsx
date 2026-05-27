@@ -33,7 +33,7 @@ const Login = () => {
       console.log(values);
       // send data to backend
 
-      fetch('http://localhost:5000/user/authenticate', {
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/authenticate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
