@@ -37,7 +37,7 @@ const Signup = () => {
       console.log(values);
 
       // sending request to backend
-      fetch('http://localhost:5000/user/add', {
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/add`, {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
